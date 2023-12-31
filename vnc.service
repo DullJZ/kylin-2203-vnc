@@ -1,0 +1,10 @@
+[Unit]
+Description=vnc script
+
+[Service]
+Type=simple
+WorkingDirectory=/
+ExecStart=bash /entrypoint.sh
+
+[Install]
+WantedBy=multi-user.target
